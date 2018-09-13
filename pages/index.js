@@ -1,6 +1,8 @@
+import PageVisible from "../lib/PageVisible";
+
 import Logger from "../components/Logger";
 import Counter from "../components/Counter";
-import PageVisible from "../lib/PageVisible";
+import Disclaimer from "../components/Disclaimer";
 
 const Index = () => (
   <div>
@@ -15,7 +17,8 @@ const Index = () => (
             by
           </h1>
           <Counter key={`${hidden.toString()}-${focus.toString()}`} />
-          <Logger hidden={hidden} focus={focus} active={visible} />
+          <Logger hidden={hidden} focus={focus} visible={visible} />
+          <Disclaimer />
         </div>
       )}
     </PageVisible>

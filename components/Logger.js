@@ -10,25 +10,25 @@ class Logger extends React.Component {
 
   recordToString = record => {
     const date = record.date.toLocaleTimeString();
-    return `${date}. Active: ${record.active}, Hidden: ${
+    return `${date}. Visible: ${record.visible}, Hidden: ${
       record.hidden
     }, Focus: ${record.focus}.`;
   };
 
   log = () => {
-    const { hidden, focus, active } = this.props;
+    const { hidden, focus, visible } = this.props;
 
     if (
       this.records.length > 0 &&
       hidden === this.records[0].hidden &&
       focus === this.records[0].focus &&
-      active === this.records[0].active
+      visible === this.records[0].visible
     ) {
       return -1;
     }
 
     const record = {
-      active,
+      visible,
       hidden,
       focus,
       date: new Date()
