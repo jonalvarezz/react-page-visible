@@ -1,21 +1,12 @@
-import Head from "next/head";
-
 import Logger from "../components/Logger";
 import Counter from "../components/Counter";
 import PageVisibility from "../components/PageVisibility";
 
 const Index = () => (
   <div>
-    <Head>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css"
-      />
-    </Head>
-
     <PageVisibility>
       {({ hidden, focus, active }) => (
-        <div className="app container mt-3">
+        <div className="container">
           <h1>
             This page has been{" "}
             <span className="text-success">
@@ -30,7 +21,7 @@ const Index = () => (
     </PageVisibility>
 
     <style jsx>{`
-      .app {
+      .container {
         max-width: 600px;
         margin: 2rem auto 0;
         text-align: center;
