@@ -1,24 +1,24 @@
 import Logger from "../components/Logger";
 import Counter from "../components/Counter";
-import PageVisibility from "../components/PageVisibility";
+import PageVisible from "../lib/PageVisible";
 
 const Index = () => (
   <div>
-    <PageVisibility>
-      {({ hidden, focus, active }) => (
+    <PageVisible>
+      {({ hidden, focus, visible }) => (
         <div className="container">
           <h1>
             This page has been{" "}
             <span className="text-success">
-              {active ? "active" : "inactive"}
+              {visible ? "visible" : "hidden"}
             </span>{" "}
             by
           </h1>
           <Counter key={`${hidden.toString()}-${focus.toString()}`} />
-          <Logger hidden={hidden} focus={focus} active={active} />
+          <Logger hidden={hidden} focus={focus} active={visible} />
         </div>
       )}
-    </PageVisibility>
+    </PageVisible>
 
     <style jsx>{`
       .container {
