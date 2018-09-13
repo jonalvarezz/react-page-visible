@@ -1,4 +1,8 @@
 # React Page Visible
+
+![alt React Page Visible Demo](./assets/screenshot.png)
+
+
 There are two common approaches to know if your page is currently visible by the user:
 * [Focus event](https://developer.mozilla.org/en-US/docs/Web/Events/focus)
 * [Page Visibility API](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API)
