@@ -3,7 +3,7 @@ const Footer = () => (
     <p>You did not found the devices you were looking for?</p>
     <p>
       <a
-        href="https://github.com/jonalvarezz/page-visibility/issues"
+        href="https://github.com/jonalvarezz/react-page-visible/issues"
         title="Create new Issue"
       >
         Feel free to add it :)

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Cross browser and device implementation for Page Visibility API and Browser focus",
   "main": "lib/index.js",
-  "repository": "https://github.com/jonalvarezz/page-visibility",
+  "repository": "https://github.com/jonalvarezz/react-page-visible",
   "author": "Jonathan Alvarez G",
   "license": "BSD-3-Clause",
   "scripts": {

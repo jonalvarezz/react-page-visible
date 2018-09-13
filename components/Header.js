@@ -16,7 +16,7 @@ const Header = () => (
       </Link>
       <a
         target="_blank"
-        href="https://github.com/jonalvarezz/page-visibility"
+        href="https://github.com/jonalvarezz/react-page-visible"
         title="View on GitHub"
       >
         Github
