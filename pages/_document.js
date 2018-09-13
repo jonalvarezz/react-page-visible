@@ -1,4 +1,5 @@
 import Document, { Head, Main, NextScript } from "next/document";
+import Header from '../components/Header';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -15,7 +16,8 @@ export default class MyDocument extends Document {
             href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css"
           />
         </Head>
-        <body className="container mt-3">
+        <body className="container">
+          <Header />
           <Main />
           <NextScript />
         </body>
