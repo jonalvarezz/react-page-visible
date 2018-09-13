@@ -1,8 +1,8 @@
-import PageVisible from "../lib/PageVisible";
+import PageVisible from "../lib"
 
-import Logger from "../components/Logger";
-import Counter from "../components/Counter";
-import Disclaimer from "../components/Disclaimer";
+import Logger from "../components/Logger"
+import Counter from "../components/Counter"
+import Disclaimer from "../components/Disclaimer"
 
 const Index = () => (
   <div>
@@ -37,4 +37,4 @@ const Index = () => (
   </div>
 );
 
-export default Index;
+export default Index

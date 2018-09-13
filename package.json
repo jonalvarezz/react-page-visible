@@ -1,18 +1,23 @@
 {
-  "name": "page-visibility",
-  "version": "1.0.0",
-  "description": "Demo page to test differences between Browser Focus and the Page Visibility API",
+  "name": "react-page-visible",
+  "version": "0.1.0",
+  "description": "Cross browser and device implementation for Page Visibility API and Browser focus",
+  "main": "lib/index.js",
+  "repository": "https://github.com/jonalvarezz/page-visibility",
+  "author": "Jonathan Alvarez G",
+  "license": "BSD-3-Clause",
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start"
+  },
+  "peerDependencies": {
+    "react": ">=15.4.0"
   },
   "devDependencies": {
     "next": "^6.1.2",
     "react": "^16.5.0",
     "react-dom": "^16.5.0"
   },
-  "keywords": ["focus", "page visibility", "nextjs", "react"],
-  "author": "@jonalvarezz",
-  "license": "ISC"
+  "keywords": ["focus", "page visibility", "nextjs", "react"]
 }
