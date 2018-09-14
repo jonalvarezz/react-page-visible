@@ -31,6 +31,11 @@ export default class App extends React.Component {
 
 ```
 
+## Installation
+```js
+yarn add react-page-visible
+```
+
 ## Development
 This app is powered by [Next.js](https://nextjs.org).
 
